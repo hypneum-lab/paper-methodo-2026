@@ -11,6 +11,7 @@ Journal of Trial and Error (JOTE) in January 2027.
 ## Layout
 
 - `docs/plan-2026-10-31.md` — detailed plan validated by the PI on 2026-10-31 (French).
+- `docs/plan-2026-10-31-v2.md` — second, independent plan drafted the same day from fresh clones of the five repos (French); open questions for the PI at the end.
 - `paper/manuscript.md` — manuscript skeleton (English); every planned paragraph carries a `TODO:` line.
 - `paper/figures/`, `paper/tables/` — to come.
 
