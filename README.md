@@ -27,7 +27,9 @@ experiments themselves.
 
 All preregistered verdicts rendered between 2026-10-30 00:00 CET and
 2026-10-31 12:00 CET, without exception: M5 certify (FAILED), NH-01
-(bit-exact replication; "not computable" at m = 0.30), NH-03 deferred
+(partial replication: bit-exact rerun, "not computable" at m = 0.30,
+headline ratio 3.9 with J_ii = 0 and 1.9 with the diagonal kept),
+NH-03 deferred
 (recency survives) and the Lie/Strang declared deviation.
 
 ## Authorship and tooling

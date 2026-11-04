@@ -338,8 +338,11 @@ micro-kiki energy figures (E-01, section 4) were analytical estimates
 presented as measurements; no tag, guard or null would have flagged
 them, because the pipeline that produced them was frozen and reproduced
 faithfully. The chain cannot replace an external replication: NH-01
-replicates Fachechi, Agliari and Barra bit-exactly at two loads, and
-that is a statement about the lab's code, not about the phenomenon.
+reruns bit-exactly and is confirmed at two loads with the self-coupling
+set to zero (J_ii = 0); with the diagonal kept, as in the field printed
+in the original article, the headline ratio falls from 3.9 to 1.9
+(section 5.2). That is a statement about the lab's code and its
+conventions, not about the phenomenon.
 And the chain is only as complete as its weakest repository: on
 2026-10-31, one repository of five has a launch guard, one has a
 systematic SWHID record, and one has a paired null. The others have the
