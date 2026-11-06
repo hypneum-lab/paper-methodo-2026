@@ -77,12 +77,12 @@ TODO: artefacts announced (guard package), not delivered; paths to the real code
 TODO.
 
 ## References (minimal, verified only)
-- M. Vaccaro. *Preregistration for Experiments with AI Agents.* arXiv:2606.11217, ICML 2026 (spotlight position paper). — verified 2026-10-31 (abstract page and PDF).
-- A. Fachechi, E. Agliari, A. Barra. *Dreaming neural networks: forgetting spurious memories and reinforcing pure ones.* arXiv:1810.12217. — cited in nerve-wml NH-01 preregistration; journal reference à vérifier.
-- I. Kanter, H. Sompolinsky (1987), projection rule. — exact citation à vérifier.
-- J. P. Simmons, L. D. Nelson, U. Simonsohn (2011), *False-positive psychology.* — standard reference, à vérifier.
-- A. Gelman, E. Loken (2013), *The garden of forking paths.* — standard reference, à vérifier.
+- M. Vaccaro. *Preregistration for Experiments with AI Agents.* arXiv:2606.11217 (cs.CY). Venue as given by the arXiv comment field only, not by the PDF: "Accepted at ICML 2026 as a Spotlight (Top 5%) Position Paper". — metadata re-checked 2026-11-04 (arXiv API).
+- A. Fachechi, E. Agliari, A. Barra. *Dreaming neural networks: Forgetting spurious memories and reinforcing pure ones.* Neural Networks 112 (2019) 24–40, doi:10.1016/j.neunet.2019.01.006; arXiv:1810.12217. — cited in nerve-wml NH-01 preregistration; verified 2026-11-04 (Crossref).
+- I. Kanter, H. Sompolinsky. *Associative recall of memory without errors.* Physical Review A 35 (1987) 380–392, doi:10.1103/PhysRevA.35.380 (projection rule). — verified 2026-11-04 (Crossref).
+- J. P. Simmons, L. D. Nelson, U. Simonsohn. *False-positive psychology.* Psychological Science 22 (2011) 1359–1366, doi:10.1177/0956797611417632. — verified 2026-11-04 (Crossref).
+- A. Gelman, E. Loken. *The statistical crisis in science.* American Scientist 102 (2014) 460, doi:10.1511/2014.111.460 (replaces the 2013 "garden of forking paths" manuscript, which has no identifier). — verified 2026-11-04 (Crossref).
 - ReScience C, submission process and criteria, https://rescience.github.io/write/ — verified 2026-10-31.
 - Journal of Trial and Error, general call, https://journal.trialanderror.org/pub/callgeneral — from the 2026-10-30 survey, à revérifier before submission.
-- Hypneum Lab artefacts: OSF `10.17605/OSF.IO/Q6JYN` (parent registration, 2026-04-19) and `10.17605/OSF.IO/TPM5S` (amendment, 2026-04-21); Zenodo `10.5281/zenodo.23619954`, `10.5281/zenodo.23636477` (kiki-flow paper drafts, superseded), concept `10.5281/zenodo.19666755`; Software Heritage `swh:1:rev:99a7cf4bb01d31e8e7f6c99c0e6676f41e6e17bb` (N10-C freeze), `swh:1:rev:02c24073d3a04e1db3d3adf2ee77e545c0bdde17` (bouba_sens v0.7), `swh:1:rev:b790db272fede343fa55c996709fe39b31f4f9dd` (Me6).
+- Hypneum Lab artefacts: OSF `10.17605/OSF.IO/Q6JYN` (parent registration, 2026-04-19) and `10.17605/OSF.IO/TPM5S` (amendment, 2026-04-21); Zenodo `10.5281/zenodo.23619954` (paper-v0.12-draft), `10.5281/zenodo.23636477` (paper-v0.13-draft) (kiki-flow paper drafts, superseded), concept `10.5281/zenodo.19666755`; Software Heritage `swh:1:rev:99a7cf4bb01d31e8e7f6c99c0e6676f41e6e17bb` (N10-C freeze), `swh:1:rev:02c24073d3a04e1db3d3adf2ee77e545c0bdde17` (bouba_sens v0.7), `swh:1:rev:b790db272fede343fa55c996709fe39b31f4f9dd` (Me6). — OSF, Zenodo (DataCite) and SWHID (Software Heritage API) identifiers resolved 2026-11-04.
 - MLRC 2026 as an official NeurIPS track, https://blog.neurips.cc/2026/05/04/mlrc-2026-reproducibility-as-an-official-track-at-neurips/ — from the survey, à revérifier.
