@@ -44,7 +44,7 @@ TODO: the invariant — no past artefact edited; old PDFs kept in tags; Zenodo v
 
 **Table 2.** TODO caption.
 
-## 5. Four case studies from one twenty-four-hour window (30–31 October 2026)
+## 5. Four case studies from one thirty-six-hour window (30–31 October 2026)
 TODO: selection rule stated before writing — every preregistered verdict returned between 2026-10-30 00:00 and 2026-10-31 12:00 CET, no exception.
 ### 5.1 A negative verdict: M5 certification rule, FAILED (50/60)
 TODO: rule fixed before any γ ≤ 30 datum; counts per γ; invariants intact; reading (solver budget, not scheme); secondary rerun.
@@ -55,9 +55,13 @@ The replication is partial in a second sense. Every arm sets the self-coupling t
 
 What the case shows about the chain: the freeze, the same-host provenance rerun and the post-freeze ablation are all products of it, but nothing in it checks that a convention declared as a deviation is the only one the original authors used.
 ### 5.3 A positive verdict: NH-03 deferred, "recency_survives"
-TODO: R at d3 = +14.65 [13.77, 15.51] vs +18.55 at d0; 79 % retained; the confound noted at review (recency vs interference).
+NH-03 asked whether the advantage of late over early writes (recency), measured with no delay before evaluation (d0), survives a write-free delay (d3: 564 steps, one full task of training without writes). The rule was frozen before the deferred evaluation (dream-of-kiki, tag `prereg-nh03-deferred-20261030`). On the primary substrate (TTT) the statistic is R = +14.65 [+13.77, +15.51] at d3 against +18.55 [+17.45, +19.61] at d0, that is 79 % of its d0 size, and it exceeds the 99th percentile of its paired null (7.04); the secondary (slow) substrate gives +17.57 [+16.65, +18.52], 89 % of its d0 size (`docs/results/2026-10-30-nh03-deferred-eval.md`). The preregistered verdict is `recency_survives` on both.
+
+What the case shows about the chain: a positive verdict is the least tested outcome of a preregistration. The rule could have failed and did not, but the review of 2026-10-30 noted that the delay confounds recency with interference from the task learned in between, and nothing in the frozen design separates the two. The verdict stands as written; its interpretation is narrower than its label.
 ### 5.4 A declared deviation: Lie/Strang confirmatory run
-TODO: 261/576 jobs in `job_error` (PermissionError in `os.nice(0)`); stop, fix, declare, relaunch; what the amendment records.
+The confirmatory run of the Lie/Strang splitting comparison (kiki-flow-research, tag `prereg-jko-splitting-20261030`, commit `09ec144`) started on 2026-10-30 at 19:50 UTC from a clean checkout. Every job ended as a `job_error`: `os.nice(0)`, called when a job builds its record after computing the trajectory, raises `PermissionError` on macOS once `nice -n 19` has put the workers at the lowest priority. Tests and pilots had run at a niceness where the call succeeds. The run was stopped the next morning with 263 of 576 jobs recorded, all as this error and none with a stored trajectory. The deviation note was written and pushed before the relaunch; the frozen protocol and its tag were left unchanged (`docs/notes/2026-10-31-jko-splitting-osnice-deviation.md`).
+
+What the case shows about the chain: the loss was about eleven and a half hours of wall time and no datum, because failed jobs stored nothing that could be read. The amendment records the cause, the count, where the failed records are kept and the decision to relaunch, so that the confirmatory run that exists is distinguishable from the one that was planned.
 TODO: Figure 2 — timeline of the window (tags, launches, verdicts, deviation, host).
 
 **Figure 2.** TODO caption.
