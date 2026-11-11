@@ -88,12 +88,14 @@ document; digest = first eight hex characters of its SHA-256.*
 | nerve-wml | `prereg-nh01-hopfield-dream-20261025` | `bc2f838` | 2026-10-25 | prereg file (`b1ccbb63`) | not recorded |
 | nerve-wml | `prereg-nh01-confirmatory-20261025` | `a000f73` | 2026-10-25 | prereg file (`6c29566b`) | not recorded |
 | nerve-wml | `prereg-nh01-correlated-20261027` | `df9a1e7` | 2026-10-27 | prereg file (`be9ef311`) | not recorded |
+| nerve-wml | `prereg-nh01-diagonal-20261031` | `6e1b006` | 2026-10-31 | to verify | not recorded |
+| nerve-wml | `n10c-bis-g7-gb300-freeze-20261031` | `44364dc` | 2026-10-31 | to verify | not recorded |
 | dream-of-kiki | `prereg-nh03-20261025` | `31412c9` | 2026-10-25 | to verify | not recorded |
 | dream-of-kiki | `prereg-nh03-sched-20261027` | `6364719` | 2026-10-27 | to verify | not recorded |
 | dream-of-kiki | `prereg-nh03-deferred-20261030` | `aa80d1f` | 2026-10-30 | to verify | not recorded |
 | bouba_sens | `prereg-b3-probe-v2-20261025` | `1d96a65` | 2026-10-25 | to verify | not recorded |
 | bouba_sens | `prereg-b3-lesion-interaction-20261027` | `37810b5` | 2026-10-27 | to verify | not recorded |
-| bouba_sens | `bouba_sens/v0.7-actionsense-prereg` | `02c2407` | 2026-10-30 | `docs/prereg/actionsense-v0.7/freeze-manifest.md` (`b8010424`) | yes, `swh:1:rev:02c24073…` (session record; to verify in repo) |
+| bouba_sens | `bouba_sens/v0.7-actionsense-prereg` | `02c2407` | 2026-10-30 | `docs/prereg/actionsense-v0.7/freeze-manifest.md` (`744d9b74`) | yes, `swh:1:rev:02c24073…` (session record; to verify in repo) |
 | bouba_sens | `prereg-me6-large-n-20261031` | `b790db2` | 2026-10-31 | `docs/prereg/me6-large-n/freeze-manifest.md` | yes, `swh:1:rev:b790db27…` (session record; to verify in repo) |
 | kiki-flow-research | `prereg-turing-strong-20261026` | `681c966` | 2026-10-26 | to verify | not recorded |
 | kiki-flow-research | `prereg-turing-strong-implicit-20261027` | `eee124f` | 2026-10-27 | to verify | not recorded |
@@ -105,19 +107,32 @@ document; digest = first eight hex characters of its SHA-256.*
 | micro-kiki | `prereg-nh81-kxkm-20261029-r3` | `c4eb859` | 2026-10-29 | to verify | not recorded |
 | micro-kiki | `prereg-nh81-kxkm-20261030-r4` | `979771f` | 2026-10-30 | to verify | not recorded |
 | micro-kiki | `prereg-nh81-m3pro-20261030` | `4b4dafd` | 2026-10-30 | to verify | not recorded |
+| micro-kiki | `nh81-gb300-freeze-20261031` | `0c99299` | 2026-10-31 | to verify | not recorded |
+| micro-kiki | `demo-35b-gb300-freeze-20261031` | `4b17d76` | 2026-10-31 | to verify | not recorded |
+| micro-kiki | `nh81-gb300-freeze-20261031b` | `185c5d4` | 2026-10-31 | `docs/prereg/nh81-gb300/freeze-record.md` | not recorded |
+| micro-kiki | `demo-35b-gb300-freeze-20261031b` | `185c5d4` | 2026-10-31 | `docs/prereg/demo-35b-lora-gb300/freeze-record.md` | not recorded |
 
 Two observations on the table. First, the only repository where the
 SWHID is systematically written down is nerve-wml, where the launcher
 demands it (section 3.2); elsewhere the identifier was obtained or not,
-and the repository does not say. Second, micro-kiki carries six tags for
-one hypothesis (NH-81) in six days: four of them are relaunches on the
-same host after infrastructure failures, each refrozen because the
-protocol file had changed. That is the chain working as intended and it
+and the repository does not say. (The column gives the state on
+2026-10-31. On 2026-11-08 the revision identifiers and a restricted
+Zenodo deposit were recorded for 26 preregistrations in
+`hypneum-lab/.github`, `docs/prereg-l2-zenodo-2026-11-08.md`; the
+digest of the bouba_sens freeze manifest was first printed here as
+`b8010424`, which is the digest of the raw data manifest listed inside
+it.) Second, micro-kiki carried six tags for one hypothesis (NH-81) in
+six days by 2026-10-30: four of them are relaunches on the same host
+after infrastructure failures, each refrozen because the protocol file
+had changed; the two GB300 freezes of 2026-10-31 make eight. That is the chain working as intended and it
 is also its cost. One protocol lock is not a tag at all: E1-small in
 dream-of-kiki is locked by the merge commit `963bb24` and the manifest
 digest `6d47d8b7…` cited in its amendment of 2026-10-30, not by an
-annotated tag. The chain tolerates this; the guard does not exist in
-that repository.
+annotated tag (a tag, `prereg-e1-small-20261028`, was put on that commit
+on 2026-11-08). The chain tolerates this. The repository has no
+tag-before-data guard, but its harness refuses to run the confirmatory
+mode on a corpus manifest whose status is not `FROZEN`
+(`scripts/e1_harness.py`).
 
 **Cost.** A freeze takes between ten minutes and an hour of the PI's
 time: regenerate the manifest, read the diff, write the tag message,
